@@ -1,0 +1,17 @@
+schema {
+    query: Query
+}
+
+type Query{
+    getAllPersons : [Person]
+    findPersonByFirstName(firstName : String) : Person
+}
+
+type Person{
+    id: Int
+    firstName: String
+    lastName: String
+    mobile: String
+    email: String
+    address: [String]
+}
